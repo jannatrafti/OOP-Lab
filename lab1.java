@@ -23,17 +23,9 @@ public class Tt{
         int sum=0;
         for(int i : arr)
         {
-            if(i==6 || i==7)
-            {
-                continue;
-            }
-            else if(i==9)
-            {
-                break;
-            }
-            else{
-                sum+=i;
-            }
+            if       (i==6 || i==7) continue;
+            else if  (i==9)         break;
+            else sum += i;
         }
         System.err.println("Sum: "+sum);
         float avg=sum/arr.length;
